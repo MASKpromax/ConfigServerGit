@@ -1,0 +1,17 @@
+﻿server:
+  port: 9005
+spring:
+  application:
+    name: springcloud-config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MASKpromax/ConfigServerGit.git
+          search-paths: /src/main/resources/config
+
+          username: MASKpromax
+          password: syy202105002551
+
+#确认github连接上

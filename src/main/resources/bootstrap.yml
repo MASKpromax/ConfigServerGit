@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springcloud-config-server
+  profiles:
+    active: remote
+  rabbitmq:
+    host: 127.0.1.1
+    port: 5672
+    username: syy
+    password: 202105002551
+eureka: 
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
